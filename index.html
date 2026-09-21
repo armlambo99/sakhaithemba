@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sakha Ithemba Trading: B-BBEE Level 1 engineering services in Waterval Boven, Mpumalanga. Specializing in mechanical, electrical, instrumentation, rigging, and telecommunication services since 2015." />
+  <meta name="keywords" content="Sakha Ithemba Trading, Engineering services, Mechanical services, Electrical services, Instrumentation services, Rigging services, Telecommunication services, Fibre optic installation, Industrial maintenance, Engineering material supplies, Cleaning services, Waterval Boven engineering services, Mpumalanga engineering services" />
+  <meta name="author" content="Sakha Ithemba Trading" />
+  <meta name="theme-color" content="#0F172A" />
+  
+  <title>Sakha Ithemba Trading | Professional Engineering & Industrial Services</title>
+  
+  <!-- Favicon (Replace with your actual favicon) -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts: Montserrat (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<style>
+    /* ============ THEME VARIABLES (Industrial/Corporate) ============ */
+    :root {
+      --primary: #0F172A;
+      --secondary: #334155;
+      --accent: #D97706;
+      --accent-hover: #B45309;
+      --bg-light: #F8FAFC;
+      --bg-white: #FFFFFF;
+      --text-dark: #1E293B;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 10px 30px -5px rgba(15, 23, 42, 0.1);
+      --shadow-lg: 0 20px 40px -5px rgba(15, 23, 42, 0.15);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      overflow-x: hidden;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+
+    /* ============ PRELOADER ============ */
+    .preloader {
+      position: fixed; inset: 0; background: var(--bg-white); z-index: 9999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+    .preloader.hidden { opacity: 0; visibility: hidden; }
+    .preloader-icon {
+      font-size: 3.5rem; color: var(--accent);
+      animation: spin 2s linear infinite;
+    }
+    .preloader-text {
+      font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem;
+      color: var(--primary); margin-top: 1.5rem; letter-spacing: 2px;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    /* ============ SCROLL PROGRESS ============ */
+    .scroll-progress {
+      position: fixed; top: 0; left: 0; height: 4px; width: 0%;
+      background: linear-gradient(90deg, var(--accent), var(--primary));
+      z-index: 1050; transition: width 0.1s ease;
+    }
+
+    /* ============ NAVBAR ============ */
+    .navbar {
+      background: transparent;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      padding: 1.5rem 0;
+      border-bottom: 1px solid transparent;
+      z-index: 1000;
+    }
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: #FFFFFF !important;
+      letter-spacing: -0.5px;
+      transition: color 0.4s ease;
+      display: flex;
+      align-items: center;
+    }
+    .navbar.scrolled .navbar-brand {
+      color: var(--primary) !important;
+    }
+    .navbar-brand span { color: var(--accent); }
+    
+    .navbar-brand img {
+      transition: all 0.3s ease;
+      filter: brightness(0) invert(1);
+      max-height: 65px;
+    }
+    .navbar.scrolled .navbar-brand img { filter: none; }
+
+    .nav-link {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.9) !important;
+      margin: 0 0.6rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 0.5rem 0 !important;
+    }
+    .navbar.scrolled .nav-link { color: var(--secondary) !important; }
+    
+    .nav-link::after {
+      content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px;
+      background: var(--accent); transition: width 0.3s ease;
+    }
+    .nav-link:hover { color: #FFFFFF !important; }
+    .navbar.scrolled .nav-link:hover { color: var(--primary) !important; }
+    .nav-link:hover::after { width: 100%; }
+
+    .btn-quote {
+      background: var(--accent); color: #FFFFFF !important;
+      padding: 0.65rem 1.5rem !important; border-radius: 6px;
+      font-weight: 700 !important; letter-spacing: 0.5px;
+      transition: all 0.3s ease; border: 2px solid var(--accent);
+      margin-left: 1rem;
+    }
+    .btn-quote:hover {
+      background: transparent; color: var(--accent) !important;
+      transform: translateY(-2px); box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+    }
+    .btn-quote::after { display: none; }
+
+    /* ============ HERO SECTION ============ */
+    .hero-section {
+      min-height: 100dvh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(110deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.7) 50%, rgba(15, 23, 42, 0.3) 100%),
+                  url('Images/home.png') center center / cover no-repeat;
+      background-attachment: fixed;
+      color: var(--bg-white);
+      overflow: hidden;
+      padding-top: 120px;
+      padding-bottom: 60px;
+    }
+    /* .hero-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px; pointer-events: none; z-index: 1;
+    } */
+    .hero-section .container { position: relative; z-index: 2; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center;
+      background: rgba(217, 119, 6, 0.15); border: 1px solid rgba(217, 119, 6, 0.4);
+      color: #FBBF24; padding: 0.6rem 1.2rem; border-radius: 50px;
+      font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.8rem;
+      letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 1.5rem;
+      backdrop-filter: blur(4px); animation: fadeInUp 0.8s ease-out forwards;
+    }
+    .hero-title {
+      font-size: clamp(2.8rem, 5.5vw, 4.8rem); font-weight: 800; color: var(--bg-white);
+      margin-bottom: 1.5rem; letter-spacing: -1px; line-height: 1.1;
+      opacity: 0; animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    }
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2vw, 1.25rem); color: #CBD5E1; max-width: 650px;
+      margin-bottom: 2.5rem; font-weight: 300; line-height: 1.8;
+      opacity: 0; animation: fadeInUp 0.8s ease-out 0.4s forwards;
+    }
+    .hero-buttons {
+      display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem;
+      justify-content: flex-start; opacity: 0; animation: fadeInUp 0.8s ease-out 0.6s forwards;
+    }
+    .btn-hero {
+      background: var(--accent); 
+      color: var(--bg-white);
+       border: 2px solid var(--accent);
+      padding: 1rem 2.5rem;
+       border-radius: 8px;
+       margin-right: 8px ;
+        font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+       text-transform: uppercase;
+        letter-spacing: 1px; font-size: 0.9rem;
+      transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+       text-decoration: none;
+      display: inline-flex;
+       align-items: center; justify-content: center; gap: 3.5rem;
+      min-width: 220px;
+       box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+    }
+    .btn-hero:hover {
+      background: transparent; color: var(--accent); transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(217, 119, 6, 0.4);
+    }
+    .btn-hero-outline {
+      background: rgba(255, 255, 255, 0.05); color: var(--bg-white);
+      border: 2px solid rgba(255, 255, 255, 0.3); padding: 1rem 2.5rem; border-radius: 8px;
+      font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1px; font-size: 0.9rem; transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+      text-decoration: none; display: inline-flex; align-items: center; justify-content: center;
+      gap: 0.5rem; min-width: 220px; backdrop-filter: blur(4px);
+    }
+    .btn-hero-outline:hover {
+      background: var(--bg-white); color: var(--primary); border-color: var(--bg-white);
+      transform: translateY(-4px); box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+    }
+
+    /* ============ GENERAL SECTION STYLING ============ */
+    .section-padding { padding: 6rem 0; }
+    .section-eyebrow {
+      font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 700;
+      color: var(--accent); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; position: relative; display: inline-block;
+    }
+    .section-title::after {
+      content: ''; display: block; width: 60px; height: 4px; background: var(--accent);
+      margin-top: 1rem; border-radius: 2px;
+    }
+    .section-title.text-center::after { margin: 1rem auto 0; }
+    .section-subtitle {
+      font-size: 1.1rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 3rem;
+    }
+
+    /* ============ CARDS & LISTS ============ */
+    .card-industrial {
+      background: var(--bg-white); border: 1px solid var(--border-color);
+      border-radius: 12px; padding: 2.5rem; transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      height: 100%; position: relative; overflow: hidden;
+    }
+    .card-industrial::before {
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
+      background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;
+    }
+    .card-industrial:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
+    .card-industrial:hover::before { transform: scaleX(1); }
+    .card-icon {
+      width: 60px; height: 60px; background: rgba(217, 119, 6, 0.1); color: var(--accent);
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; margin-bottom: 1.5rem; transition: all 0.3s ease;
+    }
+    .card-industrial:hover .card-icon { background: var(--accent); color: var(--bg-white); }
+
+    .service-list { list-style: none; padding: 0; margin: 0; }
+    .service-list li {
+      padding: 0.6rem 0; padding-left: 1.8rem; position: relative;
+      color: var(--secondary); font-size: 0.95rem; border-bottom: 1px dashed var(--border-color);
+    }
+    .service-list li:last-child { border-bottom: none; }
+    .service-list li::before {
+      content: '\F26A'; font-family: 'bootstrap-icons'; position: absolute; left: 0; top: 0.6rem;
+      color: var(--accent); font-size: 1rem;
+    }
+
+    /* ============ MISSION, VISION & VALUES ============ */
+    .mvv-section { background: var(--bg-light); position: relative; }
+    .mvv-card {
+      background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 12px;
+      padding: 2.5rem 2rem; height: 100%; position: relative; transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); overflow: hidden;
+    }
+    .mvv-card::before {
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
+      background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;
+    }
+    .mvv-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(15, 23, 42, 0.1); border-color: rgba(217, 119, 6, 0.3); }
+    .mvv-card:hover::before { transform: scaleX(1); }
+    .mvv-card-featured {
+      background: linear-gradient(135deg, var(--primary) 0%, #1E293B 100%); color: var(--bg-white); border: none;
+    }
+    .mvv-card-featured::before { background: linear-gradient(90deg, var(--accent), #FBBF24); }
+    .mvv-card-featured .mvv-title { color: var(--bg-white); }
+    .mvv-card-featured .mvv-divider { background: rgba(255, 255, 255, 0.3); }
+    .mvv-icon-wrapper { margin-bottom: 1.5rem; }
+    .mvv-icon {
+      width: 65px; height: 65px; background: rgba(217, 119, 6, 0.1); border: 2px solid rgba(217, 119, 6, 0.2);
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; color: var(--accent); transition: all 0.3s ease;
+    }
+    .mvv-card:hover .mvv-icon { background: var(--accent); color: var(--bg-white); border-color: var(--accent); }
+    .mvv-card-featured .mvv-icon { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); color: var(--accent); }
+    .mvv-card-featured:hover .mvv-icon { background: var(--accent); color: var(--bg-white); border-color: var(--accent); }
+    .mvv-title { font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; }
+    .mvv-divider { width: 50px; height: 3px; background: var(--accent); margin-bottom: 1.5rem; border-radius: 2px; }
+    .mvv-text { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 0; }
+    .mvv-card-featured .mvv-text { color: rgba(255, 255, 255, 0.85); }
+    .mvv-values-list { list-style: none; padding: 0; margin: 0; }
+    .mvv-values-list li {
+      display: flex; align-items: flex-start; gap: 1rem; padding: 0.9rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); transition: padding-left 0.3s ease;
+    }
+    .mvv-values-list li:last-child { border-bottom: none; }
+    .mvv-values-list li:hover { padding-left: 0.5rem; }
+    .mvv-values-list li i { font-size: 1.2rem; color: var(--accent); margin-top: 0.2rem; flex-shrink: 0; }
+    .mvv-values-list li div { flex-grow: 1; }
+    .mvv-values-list li strong { display: block; color: var(--bg-white); font-weight: 700; font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .mvv-values-list li span { display: block; color: rgba(255, 255, 255, 0.7); font-size: 0.85rem; line-height: 1.5; }
+
+    /* ============ GALLERY SECTION ============ */
+    .gallery-section { background: var(--bg-white); }
+    .gallery-card {
+      position: relative; border-radius: 12px; overflow: hidden; cursor: pointer;
+      box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08); transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .gallery-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15); }
+    .gallery-img { width: 100%; height: 300px; object-fit: cover; transition: transform 0.6s ease; }
+    .gallery-card:hover .gallery-img { transform: scale(1.1); }
+    .gallery-overlay {
+      position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 100%);
+      display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;
+    }
+    .gallery-card:hover .gallery-overlay { opacity: 1; }
+    .gallery-content { text-align: center; color: var(--bg-white); transform: translateY(20px); transition: transform 0.4s ease; }
+    .gallery-card:hover .gallery-content { transform: translateY(0); }
+    .gallery-content i { font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem; display: block; }
+    .gallery-content h4 { font-family: 'Montserrat', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--bg-white); margin-bottom: 0.5rem; }
+    .gallery-content p { font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); margin: 0; }
+    .gallery-lightbox {
+      display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.95); z-index: 9998;
+      justify-content: center; align-items: center; padding: 2rem; cursor: zoom-out; animation: fadeIn 0.3s ease;
+    }
+    .gallery-lightbox.active { display: flex; }
+    .lightbox-image {
+      max-width: 90%; max-height: 90vh; object-fit: contain; border-radius: 12px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5); animation: zoomIn 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .lightbox-close {
+      position: absolute; top: 30px; right: 40px; font-size: 3rem; color: var(--bg-white);
+      cursor: pointer; line-height: 1; transition: all 0.3s ease; z-index: 9999;
+    }
+    .lightbox-close:hover { color: var(--accent); transform: rotate(90deg) scale(1.2); }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes zoomIn { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: scale(1); } }
+
+    /* ============ COMPACT TEAM & ORG CHART ============ */
+    .team-section { background: var(--bg-light); }
+    .compact-org-chart {
+      background: var(--bg-white); border-radius: 12px; padding: 2rem;
+      box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+    }
+    .org-row { display: flex; justify-content: center; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .org-box {
+      background: linear-gradient(135deg, rgba(217, 119, 6, 0.1), rgba(217, 119, 6, 0.05));
+      border: 2px solid rgba(217, 119, 6, 0.3); border-radius: 10px; padding: 0.8rem 0.6rem;
+      text-align: center; min-width: 140px; max-width: 160px; transition: all 0.3s ease; cursor: pointer;
+    }
+    .org-box:hover {
+      background: var(--accent); border-color: var(--accent); transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(217, 119, 6, 0.25);
+    }
+    .org-box:hover i, .org-box:hover span { color: var(--bg-white); }
+    .org-box.director {
+      background: linear-gradient(135deg, var(--primary), #1E293B); border-color: var(--accent);
+      min-width: 280px; padding: 1rem 1.5rem;
+    }
+    .org-box.director i { color: var(--accent); font-size: 1.8rem; }
+    .org-box.director span, .org-box.director small { color: var(--bg-white); }
+    .org-box i { display: block; font-size: 1.3rem; color: var(--accent); margin-bottom: 0.4rem; transition: all 0.3s ease; }
+    .org-box span {
+      display: block; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;
+      font-weight: 700; color: var(--primary); line-height: 1.3; transition: all 0.3s ease;
+    }
+    .org-box small { display: block; font-size: 0.65rem; color: var(--text-muted); margin-top: 0.3rem; font-weight: 600; }
+    .org-box.small { min-width: 120px; max-width: 135px; padding: 0.7rem 0.5rem; }
+    .org-box.small i { font-size: 1.1rem; }
+    .org-box.small span { font-size: 0.7rem; }
+    .org-box.tiny { min-width: 110px; max-width: 120px; padding: 0.6rem 0.4rem; }
+    .org-box.tiny i { font-size: 1rem; margin-bottom: 0.3rem; }
+    .org-box.tiny span { font-size: 0.65rem; }
+    .org-connectors { position: relative; height: 20px; margin-bottom: 1rem; }
+    .org-connectors::before {
+      content: ''; position: absolute; top: 0; left: 50%; width: 2px; height: 20px;
+      background: linear-gradient(to bottom, var(--accent), rgba(217, 119, 6, 0.3)); transform: translateX(-50%);
+    }
+    .org-connectors.level-2::after, .org-connectors.level-3::after {
+      content: ''; position: absolute; top: 0; left: 15%; right: 15%; height: 2px;
+      background: linear-gradient(to right, rgba(217, 119, 6, 0.2), var(--accent), rgba(217, 119, 6, 0.2));
+    }
+    .team-detail-card {
+      background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 12px;
+      padding: 2rem 1.5rem; text-align: center; transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); height: 100%;
+    }
+    .team-detail-card:hover { transform: translateY(-6px); box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1); border-color: rgba(217, 119, 6, 0.3); }
+    .team-detail-icon {
+      width: 70px; height: 70px; background: linear-gradient(135deg, rgba(217, 119, 6, 0.15), rgba(217, 119, 6, 0.05));
+      border: 2px solid rgba(217, 119, 6, 0.2); border-radius: 50%; display: flex; align-items: center;
+      justify-content: center; margin: 0 auto 1.2rem; font-size: 1.8rem; color: var(--accent); transition: all 0.3s ease;
+    }
+    .team-detail-card:hover .team-detail-icon { background: var(--accent); color: var(--bg-white); border-color: var(--accent); transform: scale(1.05); }
+    .team-detail-card h4 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.6rem; }
+    .team-role-badge {
+      display: inline-block; background: rgba(217, 119, 6, 0.1); color: var(--accent);
+      padding: 0.3rem 1rem; border-radius: 15px; font-size: 0.75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem;
+    }
+    .team-detail-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
+
+    /* ============ CLIENTS & FORMS ============ */
+    .client-box {
+      background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 10px;
+      padding: 2rem; text-align: center; transition: all 0.3s ease; display: flex;
+      flex-direction: column; align-items: center; justify-content: center; min-height: 140px;
+    }
+    .client-box:hover { border-color: var(--accent); box-shadow: var(--shadow-md); }
+    .client-name { font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary); font-size: 1.1rem; }
+    .client-date { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; }
+    .ref-card {
+      background: var(--bg-white); border-left: 4px solid var(--accent); padding: 2rem;
+      border-radius: 0 12px 12px 0; box-shadow: var(--shadow-sm); transition: all 0.3s ease;
+    }
+    .ref-card:hover { box-shadow: var(--shadow-md); transform: translateX(5px); }
+    .ref-company { font-weight: 700; color: var(--primary); font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .ref-contact { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .ref-contact i { color: var(--accent); margin-right: 0.5rem; }
+    .form-control, .form-select {
+      border: 1px solid var(--border-color); border-radius: 8px; padding: 0.9rem 1.2rem;
+      font-family: 'Inter', sans-serif; font-size: 1rem; color: var(--text-dark);
+      transition: all 0.3s ease; background: var(--bg-white);
+    }
+    .form-control:focus, .form-select:focus {
+      border-color: var(--accent); box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.1); outline: none;
+    }
+    .form-label {
+      font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem;
+      color: var(--secondary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem;
+    }
+    .btn-submit {
+      background: var(--primary); color: var(--bg-white); border: 2px solid var(--primary);
+      padding: 1rem 2.5rem; border-radius: 8px; font-family: 'Montserrat', sans-serif;
+      font-weight: 700; text-transform: uppercase; letter-spacing: 1px; width: 100%; transition: all 0.3s ease;
+    }
+    .btn-submit:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
+    /* ============ FOOTER ============ */
+    .footer { background: var(--primary); color: #94A3B8; padding: 5rem 0 2rem; border-top: 4px solid var(--accent); }
+    .footer h5 { color: var(--bg-white); font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 700; }
+    .footer a { color: #94A3B8; text-decoration: none; transition: all 0.3s ease; display: block; margin-bottom: 0.8rem; font-size: 0.95rem; }
+    .footer a:hover { color: var(--accent); padding-left: 5px; }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 3rem; padding-top: 2rem; font-size: 0.85rem; text-align: center; }
+    .reg-details { font-size: 0.8rem; color: #64748B; margin-top: 1rem; line-height: 1.6; }
+
+    /* ============ SCROLL REVEAL ============ */
+    .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-40px); transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(40px); transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+
+    /* ======================================================== */
+    /* ============ CONSOLIDATED RESPONSIVE FIXES ============ */
+    /* ======================================================== */
+
+    /* Tablets and Large Phones */
+    @media (max-width: 991px) {
+      .navbar {
+        background: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(12px);
+        padding: 1rem 0;
+      }
+      .navbar.scrolled { background: rgba(255, 255, 255, 0.98); }
+      .navbar-brand img { filter: none; } /* Always show original color on mobile */
+      
+      .navbar-collapse {
+        background: transparent; padding: 1rem 0; box-shadow: none; margin-top: 0.5rem; border: none;
+      }
+      .nav-link {
+        margin: 0.8rem 0; font-size: 1rem; display: block; color: rgba(255, 255, 255, 0.9) !important;
+        padding: 0.5rem 1rem !important; border-radius: 6px;
+      }
+      .navbar.scrolled .nav-link { color: var(--secondary) !important; }
+      .nav-link::after { display: none; }
+      .nav-link:hover { background: rgba(255, 255, 255, 0.1); }
+      .navbar.scrolled .nav-link:hover { background: rgba(15, 23, 42, 0.05); }
+      
+      .btn-quote {
+        margin-left: 0; margin-top: 1rem; display: block; text-align: center;
+        max-width: 250px; margin-left: auto; margin-right: auto;
+      }
+      .hero-title { font-size: clamp(2.2rem, 6vw, 3.5rem); }
+      .hero-subtitle { font-size: 1.1rem; }
+      .section-padding { padding: 4rem 0; }
+      .mvv-card, .team-detail-card { padding: 2rem 1.5rem; margin-bottom: 1.5rem; }
+    }
+
+    /* Standard Mobile Phones */
+    @media (max-width: 768px) {
+      .hero-section {
+        background-attachment: scroll; /* Prevents iOS parallax bugs */
+        padding-top: 100px;
+        padding-bottom: 40px;
+        text-align: center;
+      }
+      .hero-subtitle { margin-left: auto; margin-right: auto; }
+      .hero-buttons {
+        justify-content: center; gap: 1rem !important; flex-direction: column;
+        align-items: center; width: 100%;
+      }
+      .btn-hero, .btn-hero-outline {
+        width: 100%; max-width: 300px; margin-right: 100px !important;
+      }
+      .section-title { font-size: 2rem; }
+      .section-subtitle { font-size: 1rem; margin-bottom: 2rem; }
+
+      /* Org Chart Mobile Fix: Horizontal scroll preserves tree structure */
+      .compact-org-chart {
+        padding: 1.5rem 0.5rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .org-row {
+        min-width: 600px; /* Forces tree to stay wide, user swipes left/right */
+        gap: 0.5rem;
+      }
+      .org-box { min-width: 110px; max-width: 130px; padding: 0.8rem 0.5rem; }
+      .org-box.director { min-width: 200px; max-width: 240px; padding: 1rem; }
+      .org-box i { font-size: 1.1rem; }
+      .org-box span { font-size: 0.65rem; }
+      .org-box.small { min-width: 100px; max-width: 115px; }
+      .org-box.tiny { min-width: 90px; max-width: 105px; }
+
+      .team-detail-card { padding: 1.5rem 1.2rem; margin-bottom: 1rem; }
+      .gallery-img { height: 250px; }
+      .gallery-lightbox { padding: 1rem; }
+      .lightbox-close { top: 15px; right: 15px; font-size: 2.5rem; }
+    }
+
+    /* Small Mobile Phones */
+    @media (max-width: 480px) {
+      .hero-title { font-size: 2rem; }
+      .hero-badge { font-size: 0.7rem; padding: 0.5rem 1rem; }
+      .stat-number { font-size: 2rem; }
+      .stat-label { font-size: 0.8rem; }
+      .org-row { min-width: 500px; }
+      .org-box { min-width: 90px; max-width: 110px; padding: 0.6rem 0.4rem; }
+      .org-box.director { min-width: 180px; }
+      .footer { padding: 3rem 0 1.5rem; text-align: center; }
+      .footer h5 { margin-top: 1.5rem; }
+    }
+
+      
+
+</style>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <i class="bi bi-gear-wide-connected preloader-icon"></i>
+    <div class="preloader-text">SAKHA ITHEMBA</div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <!-- Logo Image -->
+      <img src="images/logo.png" alt="Sakha Ithemba Trading" height="50" class="d-inline-block align-text-top me-2">
+      <!-- Brand Text -->
+     
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="nav-link btn-quote" href="#contact">Request a Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 reveal-left">
+          
+          <h1 class="hero-title">Engineering & Industrial Services</h1>
+          <p class="hero-subtitle">
+            Founded on a passion for engineering, Sakha Ithemba Trading delivers quality, safety, and reliability across mechanical, electrical, instrumentation, and telecommunication sectors in Mpumalanga and beyond.
+          </p>
+          <div class="d-flex flex-wrap">
+            <a href="#services" class="btn-hero">View Our Services</a>
+            <a href="#contact" class="btn-hero-outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section class="section-padding" id="about" style="background: var(--bg-white);">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-left">
+          <!-- Replace src with your local image: images/about-us.jpg -->
+          <img src="Images/Picture1.jpg" 
+               alt="Engineering Team at Work" class="img-fluid rounded-4 shadow-lg" />
+        </div>
+        <div class="col-lg-6 reveal-right">
+          <p class="section-eyebrow">About Our Company</p>
+          <h2 class="section-title">Building the Future with Precision</h2>
+          <p class="mt-4" style="color: var(--text-muted);">
+            Established in <strong>2015</strong> by <strong>Mahlangu Victor Themba</strong>, Sakha Ithemba Trading is a proudly <strong>B-BBEE Level 1</strong> company born from a deep passion for engineering excellence. 
+          </p>
+          <p style="color: var(--text-muted);">
+            Our foundation is built on a <strong>Qualification in Instrument Mechanician Trade Test Certificate (Red Seal)</strong>, obtained in March 2010. Today, we bring approximately <strong>20 years of combined experience</strong> across multiple high-demand industries, delivering uncompromising quality and safety.
+          </p>
+          
+          <div class="row mt-4 g-3">
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-shield-check text-warning fs-4 me-3"></i>
+                <span class="fw-bold">Uncompromising Safety</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-patch-check-fill text-warning fs-4 me-3"></i>
+                <span class="fw-bold">B-BBEE Level 1</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 p-3 rounded-3" style="background: var(--bg-light); border-left: 4px solid var(--accent);">
+            <p class="mb-0 fw-semibold" style="color: var(--primary);">Industries We Serve:</p>
+            <p class="mb-0 small" style="color: var(--text-muted);">
+              Sappi Ngodwana • Anglo Platinum • Gold Fields South Deep Mines • Ntobe Fire Solutions • DEIC Solutions • MJMP83 (Eskom Outage)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION, VISION & VALUES -->
+  <section class="section-padding mvv-section" id="mission-vision">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <p class="section-eyebrow">Our Foundation</p>
+      <h2 class="section-title text-center">Mission, Vision & Values</h2>
+      <p class="section-subtitle">The principles that guide everything we do</p>
+    </div>
+    
+    <div class="row g-4">
+      <!-- Mission Card -->
+      <div class="col-lg-4 col-md-6 reveal delay-1">
+        <div class="mvv-card">
+          <div class="mvv-icon-wrapper">
+            <div class="mvv-icon">
+              <i class="bi bi-bullseye"></i>
+            </div>
+          </div>
+          <h3 class="mvv-title">Our Mission</h3>
+          <div class="mvv-divider"></div>
+          <p class="mvv-text">
+            To envisage the successful utilisation of local services for quality and efficient contribution to the market and client.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vision Card -->
+      <div class="col-lg-4 col-md-6 reveal delay-2">
+        <div class="mvv-card">
+          <div class="mvv-icon-wrapper">
+            <div class="mvv-icon">
+              <i class="bi bi-eye"></i>
+            </div>
+          </div>
+          <h3 class="mvv-title">Our Vision</h3>
+          <div class="mvv-divider"></div>
+          <p class="mvv-text">
+            Aspires to be the best in the engineering industry, setting benchmarks for quality, safety, and innovation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Values Card -->
+      <div class="col-lg-4 col-md-12 reveal delay-3">
+        <div class="mvv-card mvv-card-featured">
+          <div class="mvv-icon-wrapper">
+            <div class="mvv-icon">
+              <i class="bi bi-heart-pulse"></i>
+            </div>
+          </div>
+          <h3 class="mvv-title">Our Core Values</h3>
+          <div class="mvv-divider"></div>
+          <ul class="mvv-values-list">
+            <li>
+              <i class="bi bi-shield-check"></i>
+              <div>
+                <strong>Safety</strong>
+                <span>Stringent measures and compliance at all times</span>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-hand-thumbs-up"></i>
+              <div>
+                <strong>Integrity</strong>
+                <span>Honest, fair, and transparent dealings</span>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-people"></i>
+              <div>
+                <strong>Respect</strong>
+                <span>Treating all clients with trust and dignity</span>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-globe"></i>
+              <div>
+                <strong>Responsibility</strong>
+                <span>Managing our environmental impact</span>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-trophy"></i>
+              <div>
+                <strong>Delivery</strong>
+                <span>Striving for excellence and committed delivery</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- SERVICES SECTION -->
+  <section class="section-padding" id="services" style="background: var(--bg-white);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title text-center">Our Professional Services</h2>
+        <p class="section-subtitle">Comprehensive engineering and industrial solutions tailored to meet the highest standards of quality and safety.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Mechanical & Rigging -->
+        <div class="col-lg-4 col-md-6 reveal delay-1">
+          <div class="card-industrial">
+            <div class="card-icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <h4>Mechanical & Basic Rigging</h4>
+            <ul class="service-list mt-3">
+              <li>Installation, Maintenance & Repair</li>
+              <li>Testing and Inspecting</li>
+              <li>Anchoring and Levelling</li>
+              <li>Load Handling</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Supply & Cleaning -->
+        <div class="col-lg-4 col-md-6 reveal delay-2">
+          <div class="card-industrial">
+            <div class="card-icon"><i class="bi bi-box-seam"></i></div>
+            <h4>Supply & Cleaning Services</h4>
+            <ul class="service-list mt-3">
+              <li>Domestic & industrial cleaning products</li>
+              <li>Engineering material supplies</li>
+              <li>Office cleaning & Plant housekeeping</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Electrical -->
+        <div class="col-lg-4 col-md-6 reveal delay-3">
+          <div class="card-industrial">
+            <div class="card-icon"><i class="bi bi-lightning-charge"></i></div>
+            <h4>Electrical Services</h4>
+            <ul class="service-list mt-3">
+              <li>Underground & aerial cable installation</li>
+              <li>Cable racks, lights, plugs & COC issuing</li>
+              <li>CCTV, access control & electric fences</li>
+              <li>Gate motor & alarm system maintenance</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Instrumentation -->
+        <div class="col-lg-6 col-md-6 reveal delay-1">
+          <div class="card-industrial">
+            <div class="card-icon"><i class="bi bi-speedometer2"></i></div>
+            <h4>Instrumentation Services</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="service-list mt-3">
+                  <li>Calibration of flow, level, temp & pressure instruments</li>
+                  <li>Control valve replacement</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="service-list mt-3">
+                  <li>2-wire & 4-wire measuring instrument installation</li>
+                  <li>Shutdown duties planning & execution</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telecommunication -->
+        <div class="col-lg-6 col-md-12 reveal delay-2">
+          <div class="card-industrial">
+            <div class="card-icon"><i class="bi bi-wifi"></i></div>
+            <h4>Telecommunication Services</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="service-list mt-3">
+                  <li>Trenching, laying sleeves, installing ducts</li>
+                  <li>Floating & overhead fibre-optic cable installation</li>
+                  <li>Construction of joint pits</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="service-list mt-3">
+                  <li>Computer repairs & network management</li>
+                  <li>IT consulting & Cloud computing services</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+<section class="section-padding gallery-section" id="gallery">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <p class="section-eyebrow">Our Work</p>
+      <h2 class="section-title text-center">Project Gallery</h2>
+      <p class="section-subtitle">Showcasing our expertise and commitment to excellence</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Gallery Item 1 -->
+      <div class="col-lg-4 col-md-6 reveal delay-1">
+        <div class="gallery-card">
+          <img src="images/Picture9.jpg" alt="Engineering Project 1" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <i class="bi bi-zoom-in"></i>
+              <h4>Mechanical Installation</h4>
+              <p>Sappi Ngodwana</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="col-lg-4 col-md-6 reveal delay-2">
+        <div class="gallery-card">
+          <img src="images/Picture10.jpg" alt="Engineering Project 2" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <i class="bi bi-zoom-in"></i>
+              <h4>Electrical Services</h4>
+              <p>UCD Engineering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="col-lg-4 col-md-6 reveal delay-3">
+        <div class="gallery-card">
+          <img src="images/Picture5.jpg" alt="Engineering Project 3" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <i class="bi bi-zoom-in"></i>
+              <h4>Instrumentation</h4>
+              <p>DEIC Solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="col-lg-6 col-md-6 reveal delay-1">
+        <div class="gallery-card">
+          <img src="images/Picture11.jpg" alt="Engineering Project 4" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <i class="bi bi-zoom-in"></i>
+              <h4>Fibre Optic Installation</h4>
+              <p>Telecommunication Project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="col-lg-6 col-md-12 reveal delay-2">
+        <div class="gallery-card">
+          <img src="images/Picture8.jpg" alt="Engineering Project 5" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <i class="bi bi-zoom-in"></i>
+              <h4>Industrial Maintenance</h4>
+              <p>Anglo Platinum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX MODAL -->
+<div class="gallery-lightbox" id="galleryLightbox">
+  <span class="lightbox-close">&times;</span>
+  <img src="" alt="Preview" class="lightbox-image" id="lightboxImage">
+</div>
+
+ 
+<!-- OUR TEAM SECTION -->
+<section class="section-padding team-section" id="team">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <p class="section-eyebrow">The People Behind the Precision</p>
+      <h2 class="section-title text-center">Meet Our Team</h2>
+      <p class="section-subtitle">A dedicated workforce of certified professionals committed to engineering excellence.</p>
+    </div>
+
+    <!-- COMPACT ORG CHART -->
+    <div class="compact-org-chart reveal mb-5">
+      <div class="org-row">
+        <div class="org-box director">
+          <i class="bi bi-person-badge"></i>
+          <span>Director / Operations Manager</span>
+          <small>Mahlangu Victor Themba</small>
+        </div>
+      </div>
+      
+      <div class="org-connectors"></div>
+      
+      <div class="org-row org-row-2">
+        <div class="org-box">
+          <i class="bi bi-calculator"></i>
+          <span>Finance/Admin Manager</span>
+        </div>
+        <div class="org-box">
+          <i class="bi bi-tools"></i>
+          <span>Senior Installation Technician</span>
+        </div>
+        <div class="org-box">
+          <i class="bi bi-shield-check"></i>
+          <span>Safety Officer</span>
+        </div>
+        <div class="org-box">
+          <i class="bi bi-lightning-charge"></i>
+          <span>Electrician</span>
+        </div>
+        <div class="org-box">
+          <i class="bi bi-speedometer2"></i>
+          <span>Instrument Mechanician</span>
+        </div>
+      </div>
+      
+      <div class="org-connectors level-2"></div>
+      
+      <div class="org-row org-row-3">
+        <div class="org-box small">
+          <i class="bi bi-person"></i>
+          <span>Admin Officer</span>
+        </div>
+        <div class="org-box small">
+          <i class="bi bi-gear"></i>
+          <span>Technician Assistant</span>
+        </div>
+        <div class="org-box small">
+          <i class="bi bi-shield"></i>
+          <span>Safety Representative</span>
+        </div>
+        <div class="org-box small">
+          <i class="bi bi-wrench"></i>
+          <span>Semi Skilled</span>
+        </div>
+        <div class="org-box small">
+          <i class="bi bi-cpu"></i>
+          <span>Instrument Assistant</span>
+        </div>
+      </div>
+      
+      <div class="org-connectors level-3"></div>
+      
+      <div class="org-row org-row-4">
+        <div class="org-box tiny">
+          <i class="bi bi-hammer"></i>
+          <span>General Worker</span>
+        </div>
+        <div class="org-box tiny">
+          <i class="bi bi-hammer"></i>
+          <span>General Worker</span>
+        </div>
+        <div class="org-box tiny">
+          <i class="bi bi-hammer"></i>
+          <span>General Worker</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEAM CARDS -->
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 reveal delay-1">
+        <div class="team-detail-card">
+          <div class="team-detail-icon">
+            <i class="bi bi-person-badge"></i>
+          </div>
+          <h4>Mahlangu Victor Themba</h4>
+          <div class="team-role-badge">Director / Operations Manager</div>
+          <p class="team-detail-text">
+            Founder with Instrument Mechanician Trade Test Certificate (Red Seal) and approximately 20 years of combined experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 reveal delay-2">
+        <div class="team-detail-card">
+          <div class="team-detail-icon">
+            <i class="bi bi-calculator"></i>
+          </div>
+          <h4>Finance / Admin Manager</h4>
+          <div class="team-role-badge">Administration</div>
+          <p class="team-detail-text">
+            Oversees financial operations and administrative functions to ensure smooth business operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 reveal delay-3">
+        <div class="team-detail-card">
+          <div class="team-detail-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <h4>Safety Officer</h4>
+          <div class="team-role-badge">Health & Safety</div>
+          <p class="team-detail-text">
+            Ensures compliance with stringent safety measures and maintains the highest safety standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- CLIENTS & EXPERIENCE -->
+  <section class="section-padding" id="clients" style="background: var(--bg-white);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <p class="section-eyebrow">Trusted By Industry Leaders</p>
+        <h2 class="section-title text-center">Our Clients & Experience</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center mb-5">
+        <div class="col-lg-4 col-md-6 reveal delay-1">
+          <div class="client-box">
+            <!-- Replace with: images/sappi-logo.png -->
+            <i class="bi bi-building fs-1 text-muted mb-3"></i>
+            <div class="client-name">SAPPI Ngodwana</div>
+            <div class="client-date">July 2024 – To Date</div>
+            <span class="badge bg-warning text-dark mt-2">Pulp & Paper Packaging</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal delay-2">
+          <div class="client-box">
+            <i class="bi bi-building fs-1 text-muted mb-3"></i>
+            <div class="client-name">UCD Engineering & Dredging</div>
+            <div class="client-date">January 2020 – December 2023</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal delay-3">
+          <div class="client-box">
+            <i class="bi bi-building fs-1 text-muted mb-3"></i>
+            <div class="client-name">Ntobe Fire Solutions</div>
+            <div class="client-date">May 2017 – October 2019</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal delay-1">
+          <div class="client-box">
+            <i class="bi bi-building fs-1 text-muted mb-3"></i>
+            <div class="client-name">DEIC Solutions</div>
+            <div class="client-date">March 2020 – March 2021</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal delay-2">
+          <div class="client-box">
+            <i class="bi bi-building fs-1 text-muted mb-3"></i>
+            <div class="client-name">Glance Properties</div>
+            <div class="client-date">January 2020 – January 2021</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Client References -->
+      <div class="reveal">
+        <h3 class="text-center mb-4" style="font-size: 1.5rem; color: var(--secondary);">Client References</h3>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="ref-card">
+              <div class="ref-company">Ntobe Fire Solutions</div>
+              <div class="ref-contact"><i class="bi bi-person"></i> Mrs Natalie Collins (Office Manager)</div>
+              <div class="ref-contact"><i class="bi bi-telephone"></i> <a href="tel:0137570151" class="text-decoration-none text-muted">013 757 0151 / 2</a></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ref-card">
+              <div class="ref-company">DEIC Solutions</div>
+              <div class="ref-contact"><i class="bi bi-person"></i> Mr Sibusiso Dash (Director)</div>
+              <div class="ref-contact"><i class="bi bi-phone"></i> <a href="tel:0737652259" class="text-decoration-none text-muted">073 765 2259</a></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ref-card">
+              <div class="ref-company">SAPPI Ngodwana</div>
+              <div class="ref-contact"><i class="bi bi-building"></i> Supply Chain Department</div>
+              <div class="ref-contact"><i class="bi bi-telephone"></i> <a href="tel:0137346097" class="text-decoration-none text-muted">013 734 6097</a></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ref-card">
+              <div class="ref-company">Glance Properties</div>
+              <div class="ref-contact"><i class="bi bi-person"></i> Mr Andrew Maseko (Director)</div>
+              <div class="ref-contact"><i class="bi bi-phone"></i> <a href="tel:0835669688" class="text-decoration-none text-muted">083 566 9688</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section-padding" id="contact" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title text-center">Contact Us & Request a Quote</h2>
+        <p class="section-subtitle">Ready to discuss your next project? Reach out to our team for professional engineering solutions.</p>
+      </div>
+
+      <div class="row g-5">
+        <!-- Contact Info -->
+        <div class="col-lg-5 reveal-left">
+          <div class="card-industrial h-100" style="background: var(--primary); color: var(--bg-white); border: none;">
+            <h4 class="text-white mb-4">Contact Information</h4>
+            
+            <div class="d-flex mb-4">
+              <i class="bi bi-geo-alt-fill fs-4 text-warning me-3 mt-1"></i>
+              <div>
+                <h6 class="text-white mb-1">Office Address</h6>
+                <p class="mb-0" style="color: #94A3B8;">3 Park Street, Waterval Boven, 1195<br>South Africa</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-4">
+              <i class="bi bi-telephone-fill fs-4 text-warning me-3 mt-1"></i>
+              <div>
+                <h6 class="text-white mb-1">Head Office</h6>
+                <p class="mb-0"><a href="tel:0659931984" class="text-decoration-none" style="color: #94A3B8;">065 993 1984</a><br>
+                <a href="tel:0823374691" class="text-decoration-none" style="color: #94A3B8;">082 337 4691</a></p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-4">
+              <i class="bi bi-envelope-fill fs-4 text-warning me-3 mt-1"></i>
+              <div>
+                <h6 class="text-white mb-1">Email Us</h6>
+                <p class="mb-0"><a href="mailto:admin@sakhaithemba.co.za" class="text-decoration-none" style="color: #94A3B8;">admin@sakhaithemba.co.za</a><br>
+                <a href="mailto:themba@sakhaithemba.co.za" class="text-decoration-none" style="color: #94A3B8;">themba@sakhaithemba.co.za</a></p>
+              </div>
+            </div>
+
+            <!-- Google Maps Placeholder (Replace src with your actual Google Maps Embed link) -->
+            <div class="mt-4 rounded-3 overflow-hidden" style="height: 200px; background: #334155;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.1234567890123!2d30.1234567!3d-25.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA3JzI0LjQiUyAzMMKwMDcnMjQuNCJF!5e0!3m2!1sen!2sza!4v1234567890" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7 reveal-right">
+          <div class="card-industrial">
+            <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact">
+              <input type="hidden" name="bot-field">
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" name="name" required placeholder="John Doe">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Company</label>
+                  <input type="text" class="form-control" name="company" placeholder="Your Company Name">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" name="email" required placeholder="john@example.com">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" name="phone" required placeholder="082 123 4567">
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Enquiry Type *</label>
+                  <select class="form-select" name="enquiryType" required>
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="Request a Quote">Request a Quote</option>
+                    <option value="General Enquiry">General Enquiry</option>
+                    <option value="Service Information">Service Information</option>
+                    <option value="Career/Job Vacancy">Career/Job Vacancy</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Service Required</label>
+                  <select class="form-select" name="service">
+                    <option value="Not Specified">Not Specified</option>
+                    <option value="Mechanical & Rigging">Mechanical & Basic Rigging</option>
+                    <option value="Supply & Cleaning">Supply & Cleaning Services</option>
+                    <option value="Electrical">Electrical Services</option>
+                    <option value="Instrumentation">Instrumentation Services</option>
+                    <option value="Telecommunication">Telecommunication Services</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Message *</label>
+                  <textarea class="form-control" name="message" rows="5" required placeholder="Please describe your project or enquiry..."></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-submit" id="submitBtn">
+                    Send Message <i class="bi bi-send ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="text-white">Sakha Ithemba Trading</h5>
+          <p style="font-size: 0.95rem; line-height: 1.8;">
+            A B-BBEE Level 1 engineering company established in 2015, delivering quality, safety, and reliability across mechanical, electrical, instrumentation, and telecommunication sectors.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5>Quick Links</h5>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#team">Our Team</a>
+          <a href="#clients">Clients</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Our Services</h5>
+          <a href="#services">Mechanical & Rigging</a>
+          <a href="#services">Electrical Services</a>
+          <a href="#services">Instrumentation</a>
+          <a href="#services">Telecommunications</a>
+          <a href="#services">Supply & Cleaning</a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Contact</h5>
+          <p class="mb-2" style="font-size: 0.9rem;"><i class="bi bi-geo-alt me-2 text-warning"></i> 3 Park Street, Waterval Boven, 1195</p>
+          <p class="mb-2" style="font-size: 0.9rem;"><i class="bi bi-telephone me-2 text-warning"></i> 065 993 1984</p>
+          <p class="mb-2" style="font-size: 0.9rem;"><i class="bi bi-envelope me-2 text-warning"></i> admin@sakhaithemba.co.za</p>
+          
+          <div class="reg-details">
+            <strong>Reg No:</strong> 2015/242341/07<br>
+            <strong>Tax No:</strong> 4380278947<br>
+            <strong>VAT No:</strong> 9774229166
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-md-start">
+            <p class="mb-0">&copy; 2026 Sakha Ithemba Trading. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <a href="#" class="d-inline me-3" style="font-size: 0.85rem;">Privacy Policy</a>
+            <a href="#" class="d-inline" style="font-size: 0.85rem;">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- THANK YOU MODAL -->
+  <div class="modal fade" id="thankYouModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 12px; border: none; box-shadow: var(--shadow-lg);">
+        <div class="modal-body text-center p-5">
+          <div style="font-size: 4rem; color: var(--accent); margin-bottom: 1rem;">
+            <i class="bi bi-check-circle-fill"></i>
+          </div>
+          <h3 style="font-family: 'Montserrat', sans-serif; color: var(--primary);">Message Sent Successfully!</h3>
+          <p class="text-muted mt-3">
+            Thank you for contacting Sakha Ithemba Trading. Our team will review your enquiry and get back to you shortly.
+          </p>
+          <button class="btn-submit mt-3" data-bs-dismiss="modal" style="width: auto; padding: 0.8rem 2.5rem;">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+
+    // Gallery Lightbox Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const lightbox = document.getElementById('galleryLightbox');
+  const lightboxImg = document.getElementById('lightboxImage');
+  const lightboxClose = document.querySelector('.lightbox-close');
+  const galleryCards = document.querySelectorAll('.gallery-card');
+  
+  galleryCards.forEach(card => {
+    card.addEventListener('click', function() {
+      const img = this.querySelector('.gallery-img');
+      lightboxImg.src = img.src;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  
+  lightboxClose.addEventListener('click', function(e) {
+    e.stopPropagation();
+    closeLightbox();
+  });
+  
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+  
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+  
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+    // ============ PRELOADER ============
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').classList.add('hidden');
+      }, 800);
+    });
+
+    // ============ SCROLL PROGRESS & NAVBAR ============
+    window.addEventListener('scroll', () => {
+      // Progress bar
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+
+      // Navbar styling
+      const nav = document.getElementById('mainNav');
+      if (scrollTop > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // ============ SCROLL REVEAL ANIMATION ============
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+      observer.observe(el);
+    });
+
+    // ============ FORM SUBMISSION (Netlify Compatible) ============
+    const contactForm = document.getElementById('contactForm');
+    const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+    const submitBtn = document.getElementById('submitBtn');
+    const originalBtnText = submitBtn.innerHTML;
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Loading state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status"></span> Sending...';
+      
+      const formData = new FormData(this);
+      
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(response => {
+        if (response.ok) {
+          setTimeout(() => {
+            thankYouModal.show();
+            contactForm.reset();
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+          }, 800);
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      })
+      .catch(error => {
+        console.error('Form submission error:', error);
+        alert('Oops! Something went wrong. Please try again or contact us directly via phone.');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+      });
+    });
+
+    // ============ SMOOTH SCROLL FOR ANCHOR LINKS ============
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          const navbarCollapse = document.getElementById('navbarNav');
+          if (navbarCollapse.classList.contains('show')) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: true });
+            bsCollapse.hide();
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
